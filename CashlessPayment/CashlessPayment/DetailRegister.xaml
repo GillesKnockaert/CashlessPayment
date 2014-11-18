@@ -1,0 +1,57 @@
+﻿<Window x:Class="CashlessPayment.DetailRegister"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Detail kassa" Height="722" Width="690">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="110"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="177*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Label Content="Kassa:" Margin="8,8,8,8" />
+
+        <Label Content="ID:" Grid.Row="2" Margin="8,8,8,8" />
+        <Label Content="Locatie:" Grid.Row="3" Margin="8,8,8,8" />
+        <Label Content="Product:" Grid.Row="4" Margin="8,8,8,8" />
+        <Label Content="Startdatum:" Grid.Row="6" Margin="8,8,8,8" />
+        <Label Content="Einddatum:" Grid.Row="7" Margin="8,8,8,8" />
+        <ComboBox Grid.Column="1" Margin="8,8,8,8" />
+        <TextBox Grid.Column="1" Margin="8,8,8,8" Grid.Row="2" />
+        <TextBox Grid.Column="1" Margin="8,8,8,8" Grid.Row="3" />
+        <ComboBox Grid.Column="1" Margin="8,8,8,8" Grid.Row="4" />
+        <DatePicker Grid.Column="1" Margin="8,8,8,8" Grid.Row="6"/>
+        <DatePicker Grid.Column="1" Margin="8,8,8,8" Grid.Row="7"/>
+        <DataGrid Margin="8,8,8,8" Grid.Row="8" Grid.ColumnSpan="4">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ID"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Naam"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Toestel"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Locatie"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Product"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Bedrag"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Aantal"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tijdstip"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Export list" Grid.Column="3" Margin="8,8,8,8" Grid.Row="9"/>
+        <Button Content="Close" Grid.Column="3" Margin="8,8,8,8" Grid.Row="10"/>
+        <CheckBox Content="Alle kassa's" Grid.Column="1" HorizontalAlignment="Left" Margin="8,12,0,12" Grid.Row="1" VerticalAlignment="center"/>
+        <CheckBox Content="Alle producten" Grid.Column="1" HorizontalAlignment="Left" Margin="8,12,0,12" Grid.Row="5" VerticalAlignment="center"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="KassaMedewerker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kassa Medewerker" Height="448" Width="775" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="32"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="65"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Label Content="Medewerker:" HorizontalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" FontSize="15" Grid.ColumnSpan="2" Margin="0,5" Height="30"/>
+        <Label Content="medewerker ID" Grid.Row="1" HorizontalContentAlignment="center" Grid.Column="1" VerticalAlignment="Center" FontSize="15" Grid.ColumnSpan="2" Margin="0,5" Height="30"/>
+        <Label Content="hier komt de naam" Grid.Row="2" HorizontalContentAlignment="center" Grid.Column="1" VerticalAlignment="Center" FontSize="15" Grid.ColumnSpan="2" Margin="0,5" Height="30"/>
+
+        <Label Content="Klant:" Grid.Column="5" HorizontalContentAlignment="center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="15" Margin="0,5" Height="30"/>
+        <Label Content="Hier komt de naam" Grid.Column="5" Grid.Row="1" HorizontalContentAlignment="center" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="15" Margin="0,5" Height="30"/>
+        <Label Content="hier komt het saldo" Grid.Column="5" Grid.Row="2" HorizontalContentAlignment="center" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="15" Margin="0,5" Height="30"/>
+
+        <ListBox Margin="8,8,8,8" Grid.Row="3"  Grid.ColumnSpan="4" Grid.Column="1" Grid.RowSpan="3"/>
+        <ListBox Grid.Column="5" Margin="10,8,8,8" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+
+        <Button Content="Bestel" Margin="8,8,8,8" Grid.Column="6" Grid.Row="6" Grid.RowSpan="2"/>
+        <Button Content="Annuleer" Margin="8,8,8,8" Grid.Row="6" Grid.Column="5" Grid.RowSpan="2"/>
+        <Button Content="UP" HorizontalAlignment="Stretch" Margin="8" Grid.Row="3" VerticalAlignment="Stretch"/>
+
+        <Button Content="DOWN" HorizontalAlignment="Stretch" Margin="8" Grid.Row="5" VerticalAlignment="Stretch"/>
+
+    </Grid>
+</Window>
